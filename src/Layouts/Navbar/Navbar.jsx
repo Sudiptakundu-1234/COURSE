@@ -2,7 +2,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -19,8 +18,10 @@ const Navbar = () => {
             sx={{ mr: 2 }}
           ></IconButton>
           
-            <Typography component="div" sx={{ flexGrow: 1 }}>
+        <Typography component="div" sx={{ flexGrow: 1 }}>
+        <Link to='/'>
               Online Course
+        </Link>
             </Typography>
           
           <Link to="/login">
